@@ -1,8 +1,9 @@
-import DiscordJS, { Guild, GuildMember, Intents } from 'discord.js'
-import dotenv from 'dotenv'
+import * as DiscordJS from "discord.js";
+import { Guild, GuildMember, Intents } from 'discord.js'
+import * as dotenv from "dotenv";
 import { loadPRMSPrice } from './rest'
 
-dotenv.config()
+dotenv.config({path: __dirname + '/../.env'})
 
 const client = new DiscordJS.Client({
     intents: [
