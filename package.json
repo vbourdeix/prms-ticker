@@ -1,8 +1,7 @@
 {
   "main": "src/index.ts",
   "scripts": {
-    "start": "node dist/main.js",
-    "dev": "npx nodemon"
+    "start": "node dist/main.js"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
